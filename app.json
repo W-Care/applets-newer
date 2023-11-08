@@ -1,22 +1,32 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/welcome/welcome",
+    "pages/posts/posts",
+    "pages/movies/movies"
   ],
   "window": {
-    "navigationBarTextStyle": "black",
-    "navigationStyle": "custom"
+    "navigationBarBackgroundColor": "#C22A1E"
   },
-  "style": "v2",
-  "renderer": "skyline",
-  "rendererOptions": {
-    "skyline": {
-      "defaultDisplayBlock": true,
-      "disableABTest": true,
-      "sdkVersionBegin": "3.0.0",
-      "sdkVersionEnd": "15.255.255"
-    }
+  "tabBar": {
+    "borderStyle": "white",
+    "selectedColor": "#333333",
+    "position": "bottom",
+    "color": "#999999",
+    "list": [
+      {
+        "text": "阅读",
+        "pagePath": "pages/posts/posts"
+      },
+      {
+        "text": "电影",
+        "pagePath": "pages/movies/movies"
+      }
+    ]
   },
-  "componentFramework": "glass-easel",
-  "sitemapLocation": "sitemap.json",
-  "lazyCodeLoading": "requiredComponents"
+  "requiredBackgroundModes": [
+    "audio",
+    "location"
+  ],
+  "sitemapLocation": "sitemap.json"
+
 }
