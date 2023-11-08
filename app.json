@@ -2,7 +2,8 @@
   "pages": [
     "pages/welcome/welcome",
     "pages/posts/posts",
-    "pages/movies/movies"
+    "pages/movies/movies",
+    "pages/post-detail/post-detail"
   ],
   "window": {
     "navigationBarBackgroundColor": "#C22A1E"
@@ -28,5 +29,4 @@
     "location"
   ],
   "sitemapLocation": "sitemap.json"
-
 }
