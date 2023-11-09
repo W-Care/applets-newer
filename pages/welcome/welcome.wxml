@@ -1,7 +1,7 @@
 
 <view class="container">
 	<!-- <image class="avatar" src="/images/avatar/1.png"></image> -->
-	<text class="motto">Hello,七月</text>
+	<text class="motto">Hello,Tester</text>
 	<!-- <button></button> -->
   <view bind:tap="onTap" class="journey-container">
     <text  class="journey">开启小程序之旅</text>

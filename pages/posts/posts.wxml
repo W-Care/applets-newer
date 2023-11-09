@@ -1,2 +1,13 @@
 <!--pages/posts/posts.wxml-->
-<text>pages/posts/posts.wxml</text>
+<!-- <text>pages/posts/posts.wxml</text> -->
+<view>
+<swiper>
+<swiper-item>
+  <image src="/images/bestplayers.png"></image>
+  </swiper-item>
+
+</swiper>
+<block>
+<test>TestIng</test>
+</block>
+</view>
