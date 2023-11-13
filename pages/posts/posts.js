@@ -25,10 +25,10 @@ Page({
         postList
       })
   },
-onGoToDetail(event){
-  const pid=event.currentTarget.dataset.postId | event.detail.pid
-  wx.navigateTo({
-    usrl:'/pages/post-detail/post-detail?pid=' +pid
+  onGoToDetail(event){
+    const pid=event.currentTarget.dataset.postId | event.detail.pid
+    wx.navigateTo({
+      usrl:'/pages/post-detail/post-detail?pid=' +pid
   })
 
 },
