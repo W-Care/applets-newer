@@ -1,4 +1,6 @@
 // pages/posts/posts.js
+import {postList} from '../../data/data.js'
+
 Page({
 
   /**
@@ -11,10 +13,25 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad(options) {
+  async onLoad(options) {
 
+    wx.setStorageSync('flag',2)
+    const flag= await wx.getStorage({
+        key: 'flag',
+      })
+      console.log(flag)
+
+      this.setData({
+        postList
+      })
   },
+onGoToDetail(event){
+  const pid=event.currentTarget.dataset.postId | event.detail.pid
+  wx.navigateTo({
+    usrl:'/pages/post-detail/post-detail?pid=' +pid
+  })
 
+},
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

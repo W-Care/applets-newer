@@ -1,13 +1,22 @@
 <!--pages/posts/posts.wxml-->
 <!-- <text>pages/posts/posts.wxml</text> -->
 <view>
-<swiper>
+<swiper interval="3000" circular vertical="{{false}}"  indicator-dots="{{true}}"  autoplay="{{true}}">
 <swiper-item>
   <image src="/images/bestplayers.png"></image>
-  </swiper-item>
+</swiper-item>
+<swiper-item>
+  <image src="/images/lpl.png"></image>
+</swiper-item>
+<swiper-item>
+  <image src="/images/jumpfly.png"></image>
+</swiper-item>
 
 </swiper>
-<block>
-<test>TestIng</test>
+
+<block wx:for="{{postList}}" wx:key="index"  wx:for-item="item" wx:for-index="idx">
+	<post bind:posttap = "onGoToDetail" res="{{item}}"/>
+
 </block>
+
 </view>
