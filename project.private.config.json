@@ -3,5 +3,18 @@
   "projectname": "solid-color",
   "setting": {
     "compileHotReLoad": true
+  },
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/post-detail/post-detail",
+          "pathName": "pages/post-detail/post-detail",
+          "query": "pid=2",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
   }
 }

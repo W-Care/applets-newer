@@ -1,18 +1,31 @@
 // pages/post-detail/post-detail.js
+import {postList} from '../../data/data.js'
+const app=getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+      postData:{},
+      collected:false,
+      isPlaying:false,
+      _pid:null,
+      _postsCollected:{},
+      _mgr:null
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad(options) {
-
+  onLoad:function(options) {
+    const postData=postList[options.pid]
+    console.log(postData)
+    this.data._pid=options.pid
+    this.setData({
+      postData
+    })
+    console.log(this.data)
   },
 
   /**

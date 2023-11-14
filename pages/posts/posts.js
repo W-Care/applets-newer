@@ -26,9 +26,11 @@ Page({
       })
   },
   onGoToDetail(event){
+    console.log(event)
     const pid=event.currentTarget.dataset.postId | event.detail.pid
+    console.log(pid)
     wx.navigateTo({
-      usrl:'/pages/post-detail/post-detail?pid=' +pid
+      url:'/pages/post-detail/post-detail?pid=1' +pid
   })
 
 },
@@ -71,7 +73,7 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom() {
-
+    console.log("onreach")
   },
 
   /**

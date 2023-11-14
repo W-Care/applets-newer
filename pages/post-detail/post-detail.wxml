@@ -1,2 +1,12 @@
 <!--pages/post-detail/post-detail.wxml-->
-<text>pages/post-detail/post-detail.wxml</text>
+<!-- <text>pages/post-detail/post-detail.wxml</text> -->
+<view class="container">
+<view class="autor-date">
+<image class="avatar" src="{{postData.avatar}}"></image>
+<text class="author">{{postData.author}}</text>
+<text class="const-text">发表于</text>
+<text class="date"> {{postData.dateTime}} </text>
+</view>
+<text class="title">{{postData.title}}</text>
+<text class="detail">{{postData.detail}}</text>
+</view>
