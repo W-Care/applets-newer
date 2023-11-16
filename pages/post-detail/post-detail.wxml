@@ -1,12 +1,22 @@
-<!--pages/post-detail/post-detail.wxml-->
-<!-- <text>pages/post-detail/post-detail.wxml</text> -->
+
 <view class="container">
-<view class="autor-date">
-<image class="avatar" src="{{postData.avatar}}"></image>
-<text class="author">{{postData.author}}</text>
-<text class="const-text">发表于</text>
-<text class="date"> {{postData.dateTime}} </text>
-</view>
-<text class="title">{{postData.title}}</text>
-<text class="detail">{{postData.detail}}</text>
+  <image class="head-image" src="{{postData.headImgSrc}}"></image>
+  <image wx:if="{{!isPlaying}}" bind:tap="onMusicStart" class="audio" src="/images/music/music-start.png"></image>
+  <image bind:tap="onMusicStop" wx:else class="audio" src="/images/music/music-stop.png"></image>
+  <view class="autor-date">
+    <image class="avatar" src="{{postData.avatar}}"></image>
+    <text class="author">{{postData.author}}</text>
+    <text class="const-text">发表于</text>
+    <text class="date"> {{postData.dateTime}} </text>
+  </view>
+  <text class="title">{{postData.title}}</text>
+  <view class="tool">
+  <view class="circle">
+    <image wx:if="{{collected}}" bind:tap="onCollect" class=""  src="/images/icon/collection.png"></image>
+    <image wx:else bind:tap="onCollect" class="" src="/images/icon/collection-anti.png"></image>
+    <image bind:tap="onShare" class="share-img" src="/images/icon/share.png"></image>
+  </view>
+<view class="horizon"></view>
+  </view>
+  <text class="detail">{{postData.detail}}</text>
 </view>
