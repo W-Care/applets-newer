@@ -26,6 +26,7 @@ Page({
       })
   },
   onGoToDetail(event){
+    console.log(111)
     console.log(event)
     const pid=event.currentTarget.dataset.postId | event.detail.pid
     console.log(pid)
