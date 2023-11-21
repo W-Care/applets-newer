@@ -3,9 +3,7 @@
     "pages/welcome/welcome",
     "pages/posts/posts",
     "pages/movies/movies",
-    "pages/post-detail/post-detail",
-    "components/post/index",
-    "components/movie/index"
+    "pages/post-detail/post-detail"
   ],
   "window": {
     "navigationBarBackgroundColor": "#C22A1E"
@@ -30,5 +28,8 @@
     "audio",
     "location"
   ],
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "movie":"/components/movie/index"
+  }
 }

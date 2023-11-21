@@ -13,6 +13,20 @@
           "query": "pid=2",
           "launchMode": "default",
           "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/movies/movies",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "components/movie/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }
