@@ -16,8 +16,8 @@
         },
         {
           "name": "",
-          "pathName": "pages/movies/movies",
-          "query": "",
+          "pathName": "pages/more-movie/more-movie",
+          "query": "type=in_theaters",
           "launchMode": "default",
           "scene": null
         },

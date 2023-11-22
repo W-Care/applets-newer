@@ -23,12 +23,12 @@ Page({
         count:3
       },
       success:(res)=>{
+        console.log(res),
         this.setData({
           inTheaters:res.data.subjects
         })
       },
     })
-    console.log(this.data.inTheaters)
    
     wx.request({
       url: app.gBaseUrl + 'coming_soon',
@@ -55,7 +55,13 @@ Page({
       }
     })
   },
-
+ onGotoMore(event){
+  console.log(event)
+  const type=event.currentTarget.dataset.type
+  wx.navigateTo({
+    url:'/pages/more-movie/more-movie?type=' + type,
+  })
+ },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
