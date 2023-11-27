@@ -1,0 +1,14 @@
+<!--pages/movie-detail/movie-detail.wxml-->
+<!-- <text>pages/movie-detail/movie-detail.wxml</text> -->
+<view class="container">
+<image mode="aspectFill" class="head-img" src="{{movie.image}}"></image>
+<view class="head-img-hover">
+  <text class="main-title">{{movie.title}}</text>
+  <text class="sub-title">{{movie.subtitle}}</text>
+  <text class="highlight-font">{{movie.wishCount}}</text>
+  <text class="plain-font">人喜欢</text>
+  <text class="highlight-font">{{movie.commentsCount}}</text>
+  <text class="plain-font">条评论</text>
+</view>
+<image bing:tap="onViewPost" class="movie-img" src="{{movie.image}}"></image>
+</view>

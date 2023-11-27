@@ -34,8 +34,22 @@ Page({
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady() {
-
+  onReady:function() {
+    let title = '电影'
+    switch(this.data._type){
+      case 'in_theaters':
+        title='热映'
+        break
+      case 'coming_soon':
+        title = '上映'
+        break
+      case 'top250':
+        title='Top250'
+        break
+    }
+    wx.setNavigationBarTitle({
+      title: title,
+    })
   },
 
   /**
@@ -63,14 +77,40 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh() {
-
+    wx.request({
+      url: app.gBaseUrl + this.data._type,
+      data:{
+        start:0,
+        count:12,
+      },
+      success:(res)=>{
+        this.setData({
+          movies:res.data.subjects
+        })
+        wx.stopPullDownRefresh()
+      }
+    })
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
   onReachBottom() {
-
+    wx.showNavigationBarLoading()
+    wx.request({
+      url: app.gBaseUrl + this.data._type,
+      data:{
+        start:this.data.movies.length,
+        count:12
+      },
+      success:(res)=>{
+        // console.log(res)
+        this.setData({
+          movies: this.data.movies.concat(res.data.subjects)
+        })
+        wx.hideNavigationBarLoading()
+      }
+    })
   },
 
   /**

@@ -27,6 +27,13 @@
           "query": "",
           "launchMode": "default",
           "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/movie-detail/movie-detail",
+          "query": "mid=313",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }

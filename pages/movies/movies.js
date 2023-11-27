@@ -56,7 +56,7 @@ Page({
     })
   },
  onGotoMore(event){
-  console.log(event)
+  // console.log(event)
   const type=event.currentTarget.dataset.type
   wx.navigateTo({
     url:'/pages/more-movie/more-movie?type=' + type,
