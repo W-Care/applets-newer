@@ -20,6 +20,7 @@
     <view class="flex-row">
       <text class="mark">评分</text>
       <view class="score-container">
+      <l-rate disable="{{true}}" size="22" score="{{movie.rating}}"/>
        <text class="average">{{movie.average}}</text>
       </view>
     </view>
@@ -46,6 +47,14 @@
     <text class="cast-font"> 影人</text>
     <scroll-view enable-flex scroll-x class="casts-container">
       <block wx:for="{{movie.castsInfo}}" wx:key="index">
+        <view class="cast-container">
+          <image class="cast-img" src="{{item.img}}"></image>
+          <text>{{item.name}}</text>
+        </view>
+        <view class="cast-container">
+          <image class="cast-img" src="{{item.img}}"></image>
+          <text>{{item.name}}</text>
+        </view>
         <view class="cast-container">
           <image class="cast-img" src="{{item.img}}"></image>
           <text>{{item.name}}</text>
