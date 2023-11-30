@@ -34,6 +34,13 @@
           "query": "mid=313",
           "launchMode": "default",
           "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/board/board",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }

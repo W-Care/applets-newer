@@ -1,1 +1,16 @@
 /* pages/board/board.wxss */
+.container{
+  display: flex;
+  flex-direction: column;
+}
+.head-img{
+  width: 100%;
+  height: 800rpx;
+  -webkit-filter: blur(20px);
+}
+.board-img{
+ height: 750rpx;
+ position: absolute;
+ padding: 50rpx 30rpx;
+
+}
