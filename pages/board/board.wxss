@@ -14,9 +14,9 @@ flex-direction: column;
 }
 .picture-title{
   position: absolute;
-  align-items: center;
   font-size: medium;
   color: red;
+  left: 50%;
 }
 .board-img{
  height:600rpx;
@@ -29,11 +29,17 @@ flex-direction: column;
 .like{
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 .like image{
   width:90rpx;
   height: 90rpx;
+}
+.highlight-font{
+  
+}
+.plain-font{
+
 }
 .share-img{
  margin-left:30rpx;

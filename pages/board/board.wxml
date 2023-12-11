@@ -3,12 +3,15 @@
 <view class="container">
   <!-- <image  mode="aspectFill" class="head-img" src="{{movie.image}}"></image> -->
   
-  <scroll-view  enable-flex  scroll-x  class="picture-container">
+  <scroll-view  enable-flex   class="picture-container">
     <image   class="head-img" src="/images/post/vr.png"></image>
     <text class="picture-title">海报</text>
+    <image mode="aspectFit" bind:tap="onViewPost" class="board-img" src="/images/post/crab.png"></image>
+    <image mode="aspectFit" bind:tap="onViewPost" class="board-img" src="/images/post/bl.png"></image>
     <image mode="aspectFit" bind:tap="onViewPost" class="board-img" src="/images/post/vr.png"></image>
-  <image mode="aspectFit" bind:tap="onViewPost" class="board-img" src="/images/post/vr.png"></image>
-  <image mode="aspectFit" bind:tap="onViewPost" class="board-img" src="/images/post/vr.png"></image>
+    <image mode="aspectFit" bind:tap="onViewPost" class="board-img" src="/images/post/crab.png"></image>
+    <image mode="aspectFit" bind:tap="onViewPost" class="board-img" src="/images/post/bl.png"></image>
+    <image mode="aspectFit" bind:tap="onViewPost" class="board-img" src="/images/post/vr.png"></image>
   </scroll-view>
  
   <view class="like">
