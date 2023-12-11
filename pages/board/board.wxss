@@ -14,7 +14,7 @@ flex-direction: column;
 }
 .picture-title{
   position: absolute;
-  text-align: center;
+  align-items: center;
   font-size: medium;
   color: red;
 }
